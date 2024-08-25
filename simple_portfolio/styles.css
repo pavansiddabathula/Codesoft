@@ -1,0 +1,241 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #ffa500;
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffa500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffa500;
+    color: #333;
+}
+
+/* Mobile View Navigation */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #ffa500;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+    font-size: 2rem;
+    color: #ffa500;
+    cursor: pointer;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 0 50px 0;
+    min-height: 100vh;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Home Section Specific Styling */
+.highlighted-text {
+    font-size: 2.5rem;
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.centered-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Project Section */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #333;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #ffa500;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ffa500;
+}
+
+.card p {
+    color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.section-content h2 {
+    color: #ffa500;
+    font-size: 2.2rem;
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+
+.styled-section p, .styled-section ul {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+    color: #ddd; 
+}
+
+.styled-section ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+.styled-section strong {
+    color: #fff; 
+}
+
+.styled-section a {
+    color: #ffa500; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease;
+}
+
+.styled-section a:hover {
+    color: #fff; 
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    header {
+        padding: 6px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .highlighted-text {
+        font-size: 2rem;
+    }
+
+    .centered-text {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
