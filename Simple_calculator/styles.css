@@ -2,7 +2,7 @@ let string="";
 let buttons=document.querySelectorAll('.button');
 // query selector all jin jin ki class button hai vo , vo selec
 // select kr legga 
-
+ 
 
 // in button se ek array bnao  
 // for each matlab sarre button 
